@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="PROJECTSITE.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <!-- Insert style here -->
+    <link rel="stylesheet" href="CSS/HomeMaster.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+
+<body>
+    <form id="form1" runat="server">
+
+        <div class="container">
+    <asp:Panel ID="Panel2" runat="server" CssClass="top-panel">
+
+        <asp:Button ID="Button1" runat="server" Text="Home" CssClass="nav-button" OnClick="Button1_Click" />
+        <asp:Button ID="Button2" runat="server" Text="Manage profile" CssClass="nav-button" OnClick="Button2_Click" />
+        <asp:Button ID="Button3" runat="server" Text="Orders" CssClass="nav-button" OnClick="Button3_Click" />
+        <asp:Button ID="Button4" runat="server" Text="Market" CssClass="nav-button" OnClick="Button4_Click" />
+
+    </asp:Panel>
+
+
+<div>
+
+
+
+
+        <div>
+            <!-- Insert body content here -->
+
+            <asp:Panel ID="Panel1" runat="server" CssClass="panel-custom">
+            <!-- Insert elements here -->
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+
+            </asp:Panel>
+
+            
+        </div>
+
+    </form>
+</body>
+</html>

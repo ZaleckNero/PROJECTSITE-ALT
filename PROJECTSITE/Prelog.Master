@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Prelog.master.cs" Inherits="PROJECTSITE.Prelog" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WASHOP</title>
+
+    <!-- insert style here -->
+     <link rel="stylesheet" href="CSS/Master1.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="form2" runat="server">
+        <div class="container">
+            <asp:Panel ID="Panel2" runat="server" CssClass="top-panel">
+
+                <asp:Button ID="Button1" runat="server" Text="Registration" CssClass="nav-button" OnClick="Button1_Click" />
+                <asp:Button ID="Button2" runat="server" Text="Login" CssClass="nav-button" OnClick="Button2_Click" />
+                <asp:Button ID="Button3" runat="server" Text="Administrator" CssClass="nav-button" OnClick="Button3_Click" />
+
+            </asp:Panel>
+
+
+        <div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+        </div>
+        
+    </form>
+</body>
+</html>
